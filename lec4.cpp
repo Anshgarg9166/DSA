@@ -251,21 +251,130 @@
 //BCD
 //CDE
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+
+//     int i =1;
+//     while(i<=n){
+//         int j =1;
+//         while(j<=n){
+//             char ch = 'A' + i+ j - 2;
+//             cout<<ch;
+//             j+=1;
+//         }
+//         cout<<endl;
+//         i+=1;
+//     }
+// }
+
+//for printing
+//D
+//CD
+//BCD
+//ABCD
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+
+//     int i =1;
+//     while(i<=n){
+//         int j =1;
+//         while(j<=i){
+//             char ch = 'A' + n - i + j - 1;
+//             cout<<ch; 
+//             j+=1;
+//         }
+//         cout<<endl;
+//         i+=1;
+//     }
+// }
+
+//   *
+//  **
+// ***
+//****
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+
+//     int i = 1;
+//     while(i<=n){
+//         int space = n-i;
+//         while(space){
+//             cout<<"_";
+//             space-=1;
+//         }
+//         int j =1;
+//         while(j<=i){
+//             cout<<'*';
+//             j+=1;
+//         }
+//         cout<<endl;
+//         i+=1;
+//     }
+// }
+
+//for printing
+//****
+//***
+//**
+//*
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     int i = 1;
+//     while(i<=n){
+//         int j = n-i+1;
+//         while(j){
+//             cout<<"*";
+//             j-=1;
+//         }
+//         i+=1;
+//         cout<<endl;
+//     }
+// }
+
+//for printing
+//   1
+//  121
+// 12321
+//1234321
+
 #include<iostream>
 using namespace std;
 int main(){
     int n;
     cin>>n;
-
     int i =1;
     while(i<=n){
-        int j =1;
+        
+
+        int j = 1;
         while(j<=n){
-            char ch = 'A' + i+ j - 2;
-            cout<<ch;
+            int space = n-i;
+            while(space){
+                cout<<"_";
+                space-=space;
+            }
+
+            
             j+=1;
+
         }
         cout<<endl;
         i+=1;
     }
+
 }
