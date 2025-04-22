@@ -352,29 +352,40 @@
 // 12321
 //1234321
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cin>>n;
+//     int i =1;
+//     while(i<=n){
+        
+
+//         int j = 1;
+//         while(j<=n){
+//             int space = n-i;
+//             while(space){
+//                 cout<<"_";
+//                 space-=space;
+//             }
+
+            
+//             j+=1;
+
+//         }
+//         cout<<endl;
+//         i+=1;
+//     }
+// }
+
+//for printing 
+//   1
+//  121
+// 12321
+//1234321
+
 #include<iostream>
 using namespace std;
 int main(){
-    int n;
-    cin>>n;
-    int i =1;
-    while(i<=n){
-        
-
-        int j = 1;
-        while(j<=n){
-            int space = n-i;
-            while(space){
-                cout<<"_";
-                space-=space;
-            }
-
-            
-            j+=1;
-
-        }
-        cout<<endl;
-        i+=1;
-    }
-
+    
 }
