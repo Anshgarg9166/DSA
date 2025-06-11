@@ -30,61 +30,62 @@
 //     return 0;
 // }
 
-#include<iostream>
-#include<climits> // Needed for INT_MIN and INT_MAX
-using namespace std;
+// #include<iostream>
+// #include<climits> // Needed for INT_MIN and INT_MAX
+// using namespace std;
 
+// // int getMax(int num[],int n){
+// //     int max = INT_MIN;
+
+// //     for(int i = 0;i<n;i++){
+// //         if(num[i]>max){
+// //             max = num[i];
+// //         }
+// //     }
+// //     return max;
+// // }
+
+
+// //Another method
 // int getMax(int num[],int n){
-//     int max = INT_MIN;
+//     int maxi = INT_MIN;
 
 //     for(int i = 0;i<n;i++){
-//         if(num[i]>max){
-//             max = num[i];
-//         }
+        
+//         maxi = max(maxi,num[i]);
+        
+//         // if(num[i]>max){
+//         //     max = num[i];
+//         // }
 //     }
-//     return max;
+//     return maxi;
 // }
 
 
-//Another method
-int getMax(int num[],int n){
-    int maxi = INT_MIN;
+// int getMin(int num[],int n){
+//     int Min = INT_MAX;
 
-    for(int i = 0;i<n;i++){
-        
-        maxi = max(maxi,num[i]);
-        
-        // if(num[i]>max){
-        //     max = num[i];
-        // }
-    }
-    return maxi;
-}
+//     for(int i = 0;i<n;i++){
+//         if(num[i] < Min){
+//             Min = num[i];
+//         }
+//     }
+//     return Min;
 
+// }
 
-int getMin(int num[],int n){
-    int Min = INT_MAX;
+// int main(){
+//     int size;
+//     cin>>size;
 
-    for(int i = 0;i<n;i++){
-        if(num[i] < Min){
-            Min = num[i];
-        }
-    }
-    return Min;
+//     int num[100];
 
-}
+//     for(int i = 0;i<size;i++){
+//         cin>>num[i];
+//     }
 
-int main(){
-    int size;
-    cin>>size;
+//     cout<<"Maximum number is "<<getMax(num,size)<<endl;
+//     cout<<"Minimum number is "<<getMin(num,size)<<endl;
+//     return 0;
+// }
 
-    int num[100];
-
-    for(int i = 0;i<size;i++){
-        cin>>num[i];
-    }
-
-    cout<<"Maximum number is "<<getMax(num,size)<<endl;
-    cout<<"Minimum number is "<<getMin(num,size)<<endl;
-    return 0;
-}
