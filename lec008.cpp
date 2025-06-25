@@ -255,28 +255,6 @@
 // b=3 11
 //output = 3
 
-// #include<iostream>
-// using namespace std;
-// int setbit(int num){
-//         int count = 0;
-//         if(num!=0){
-//                 if(num&1 == 1){
-//                         count++;
-//                         num >> 1;
-//                 }
-//                 else{
-//                         num >> 1;
-//                 }
-//         }
-//         return count;
-// }
-// int main(){
-//         int n,answer;
-//         cin>>n;
-//         answer = setbit(n);
-//         cout<<answer;
-// }
-
 #include <iostream>
 using namespace std;
 
@@ -288,11 +266,8 @@ int bits(int n)
         if (n & 1)
         {
             sum = sum + 1;
-        }else
-        {
-                n = n >> 1;
         }
-        
+        n = n >> 1;
     }
     return sum;
 }
@@ -305,3 +280,5 @@ int main()
 
     cout << "Total Set Bits = " << bits(a) + bits(b) << endl;
 }
+
+ 
