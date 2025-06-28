@@ -2,6 +2,10 @@
     "files.associations": {
         ".env*": "dotenv",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "vector": "cpp",
+        "queue": "cpp",
+        "xtree": "cpp",
+        "set": "cpp"
     }
 }
