@@ -22,15 +22,13 @@
 //     cout<<"Last element "<<a.back()<<endl;
 // }
 
-
-//Vector Stl
-// #include<iostream>
-// #include<vector>
+// Vector Stl
+//  #include<iostream>
+//  #include<vector>
 
 // using namespace std;
 // int main(){
 //     vector<int> v;
-
 
 //     cout<<"Capacity -> "<<v.capacity()<<endl;
 
@@ -82,9 +80,9 @@
 //     }
 // }
 
-//Deque Stl
-// #include<iostream>
-// #include<deque>
+// Deque Stl
+//  #include<iostream>
+//  #include<deque>
 
 // using namespace std;
 // int main(){
@@ -118,18 +116,15 @@
 //     cout<<"Empty or not -> "<<d.empty()<<endl;
 
 //     cout<<"Before erase "<<d.size()<<endl;
-//     //here we need to define the range 
+//     //here we need to define the range
 //     d.erase(d.begin(),d.begin()+1);
 //     cout<<"After erase "<<d.size()<<endl;
 // }
 
-
-
-
-//List STL
-// #include<iostream>
-// #include<list>
-// using namespace std;
+// List STL
+//  #include<iostream>
+//  #include<list>
+//  using namespace std;
 
 // int main(){
 //     list<int> l;
@@ -158,12 +153,9 @@
 //     }
 // }
 
-
-
-
-//Stack STL
-// #include<iostream>
-// #include<stack>
+// Stack STL
+//  #include<iostream>
+//  #include<stack>
 
 // using namespace std;
 
@@ -181,11 +173,9 @@
 //     cout<<"Empty or Not -> "<<s.empty()<<endl;
 // }
 
-
-
-//Queue Stl
-// #include<iostream>
-// #include<queue>
+// Queue Stl
+//  #include<iostream>
+//  #include<queue>
 
 // using namespace std;
 // int main(){
@@ -194,7 +184,7 @@
 //     q.push("Hello");
 //     q.push("Ansh");
 //     q.push("garg");
-    
+
 //     cout<<"First Element -> "<<q.front()<<endl;
 //     cout<<"Size before POP -> "<<q.size()<<endl;
 //     q.pop();
@@ -202,10 +192,9 @@
 //     cout<<"Size after POP -> "<<q.size()<<endl;
 // }
 
-
-//Priority queue
-// #include<iostream>
-// #include<queue>
+// Priority queue
+//  #include<iostream>
+//  #include<queue>
 
 // using namespace std;
 // int main(){
@@ -242,16 +231,13 @@
 //     for(int i=0;i<m;i++){
 //         cout<<mini.top()<<" ";
 //         mini.pop();
-//     } 
+//     }
 //     cout<<endl<<"Empty or Not -> "<<mini.empty()<<endl;
 // }
 
-
-
-
-//Set 
-// #include<iostream>
-// #include<set>
+// Set
+//  #include<iostream>
+//  #include<set>
 
 // using namespace std;
 // int main(){
@@ -296,12 +282,9 @@
 
 // }
 
-
-
-
-//Map
-// #include<iostream>
-// #include<map>
+// Map
+//  #include<iostream>
+//  #include<map>
 
 // using namespace std;
 // int main(){
@@ -318,15 +301,13 @@
 //         cout<<i.first<<" "<<i.second<<endl;
 //     }
 //     cout<<"Count 13 ->" <<m.count(13)<<endl;
-    
-//     cout<<"After erase "<<endl;
 
+//     cout<<"After erase "<<endl;
 
 //     m.erase(13);
 //     for(auto i : m){
 //         cout<<i.first<<" "<<i.second<<endl;
 //     }
-
 
 //     cout<<"After 5 ->"<<endl;
 //     auto it = m.find(5);
@@ -336,16 +317,15 @@
 //     }
 // }
 
+// Algorithms
 
-//Algorithms 
-
-
-#include<iostream>
-#include<algorithm>
-#include<vector>
+#include <iostream>
+#include <algorithm>
+#include <vector>
 
 using namespace std;
-int main(){
+int main()
+{
     vector<int> v;
 
     v.push_back(1);
@@ -354,40 +334,41 @@ int main(){
     v.push_back(7);
 
     // for binary search
-    cout<<"Search 5 -> "<<binary_search(v.begin(),v.end(),5)<<endl;
-    cout<<"Search 6 -> "<<binary_search(v.begin(),v.end(),6)<<endl;
+    cout << "Search 5 -> " << binary_search(v.begin(), v.end(), 5) << endl;
+    cout << "Search 6 -> " << binary_search(v.begin(), v.end(), 6) << endl;
 
-    //for upper and lower bound (it gives number of values smmaller and greater than the value)
-    cout<<"Lower bound -> "<<lower_bound(v.begin(),v.end(),4)-v.begin()<<endl;
-    cout<<"Upper bound -> "<<upper_bound(v.begin(),v.end(),4)-v.begin()<<endl;
-
+    // for upper and lower bound (it gives number of values smmaller and greater than the value)
+    cout << "Lower bound -> " << lower_bound(v.begin(), v.end(), 4) - v.begin() << endl;
+    cout << "Upper bound -> " << upper_bound(v.begin(), v.end(), 4) - v.begin() << endl;
 
     int a = 3;
     int b = 5;
-    //Max and min
-    cout<<"Max -> "<<max(a,b)<<endl;
-    cout<<"Min -> "<<min(a,b)<<endl;
+    // Max and min
+    cout << "Max -> " << max(a, b) << endl;
+    cout << "Min -> " << min(a, b) << endl;
 
-    //Swap
-    swap(a,b);
-    cout<<"a -> "<<a<<endl;
+    // Swap
+    swap(a, b);
+    cout << "a -> " << a << endl;
 
-    string abcd ="abcd";
+    string abcd = "abcd";
     // reverse a string
-    reverse(abcd.begin(),abcd.end());
-    cout<<"String -> "<<abcd<<endl;
+    reverse(abcd.begin(), abcd.end());
+    cout << "String -> " << abcd << endl;
 
-    //Rotate
-    rotate(v.begin(),v.begin()+1,v.end());
-    cout<<"After rotate "<<endl;
-    for(int i:v){
-        cout<<i<<" ";
+    // Rotate
+    rotate(v.begin(), v.begin() + 1, v.end());
+    cout << "After rotate " << endl;
+    for (int i : v)
+    {
+        cout << i << " ";
     }
-    cout<<endl;
+    cout << endl;
 
-    //Sort
-    sort(v.begin(),v.end());
-    for(int i:v){
-        cout<<i<<" ";
+    // Sort
+    sort(v.begin(), v.end());
+    for (int i : v)
+    {
+        cout << i << " ";
     }
 }

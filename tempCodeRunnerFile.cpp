@@ -1,1 +1,1 @@
-exit(0);
+cout << "Memory is free for node with data " << value << endl;
